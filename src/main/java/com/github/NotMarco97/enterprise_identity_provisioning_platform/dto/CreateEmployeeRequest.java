@@ -42,7 +42,6 @@ public class CreateEmployeeRequest {
         this.lastName = lastName;
     }
 
-
     public String getEmail(){
         return email;
     }
