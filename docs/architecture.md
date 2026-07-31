@@ -23,8 +23,9 @@ The platform is not responsible for:
 ---
 
 ## High-Level System Context
+<img width="882" height="745" alt="highLevel drawio" src="https://github.com/user-attachments/assets/c02f3b6b-699a-451b-b4ed-f3bd31e9c492" />
 
-![highLevel.drawio.png](../../../highLevel.drawio.png)
+
 
 ---
 

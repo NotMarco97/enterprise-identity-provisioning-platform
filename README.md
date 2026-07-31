@@ -11,8 +11,8 @@ This project is being developed incrementally using versioned releases to demons
 ---
 
 ### High-Level Architecture
+<img width="882" height="745" alt="highLevel drawio" src="https://github.com/user-attachments/assets/cc65d749-6334-4500-9c53-e221b20b22b1" />
 
-![highLevel.drawio.png](../../highLevel.drawio.png)
 
 ---
 
