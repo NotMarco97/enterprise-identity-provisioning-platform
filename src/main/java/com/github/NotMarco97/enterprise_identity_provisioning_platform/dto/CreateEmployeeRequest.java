@@ -8,7 +8,7 @@ public class CreateEmployeeRequest {
     private String email;
     private String department;
     private String jobTitle;
-    private String salary;
+    private double salary;
 
     public Long getId(){
         return id;
@@ -66,11 +66,11 @@ public class CreateEmployeeRequest {
         this.jobTitle = jobTitle;
     }
 
-    public String getSalary(){
+    public double getSalary(){
         return salary;
     }
 
-    public void setSalary(String salary){
+    public void setSalary(double salary){
         this.salary = salary;
     }
 

@@ -13,7 +13,6 @@ All notable changes to this project will be documented in this file.
 * Added application health check endpoint.
 * Verified successful application startup.
 * Added initial project documentation.
-* Added project license.
 * Added Git ignore configuration.
 
 ### Changed

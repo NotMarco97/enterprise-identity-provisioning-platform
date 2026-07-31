@@ -88,7 +88,7 @@ public class EmployeeResponse {
     }
 
     public void setUpdatedAt(String updatedAt){
-        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
 
     public String getEmployeeId(){

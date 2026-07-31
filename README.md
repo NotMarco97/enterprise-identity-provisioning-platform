@@ -45,7 +45,6 @@ Current technologies:
 
 * Java 21
 * Spring Boot
-* Spring Security
 * Maven
 * PostgreSQL
 * Git
@@ -71,7 +70,6 @@ Completed in this version:
 * GitHub repository creation
 * PostgreSQL configuration
 * Application startup verification
-* Health check endpoint
 * Initial project documentation
 
 ---
