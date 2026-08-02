@@ -1,30 +1,12 @@
 package com.github.NotMarco97.enterprise_identity_provisioning_platform.dto;
 
 public class CreateEmployeeRequest {
-    private Long id;
-    private String employeeId;
+
     private String firstName;
     private String lastName;
-    private String email;
     private String department;
     private String jobTitle;
     private double salary;
-
-    public Long getId(){
-        return id;
-    }
-
-    public void setId(Long id){
-        this.id = id;
-    }
-
-    public String getEmployeeId(){
-        return employeeId;
-    }
-
-    public void setEmployeeId(String employeeId){
-        this.employeeId = employeeId;
-    }
 
     public String getFirstName(){
         return firstName;
@@ -40,14 +22,6 @@ public class CreateEmployeeRequest {
 
     public void setLastName(String lastName){
         this.lastName = lastName;
-    }
-
-    public String getEmail(){
-        return email;
-    }
-
-    public void setEmail(String email){
-        this.email = email;
     }
 
     public String getDepartment(){
