@@ -6,6 +6,7 @@ import com.github.NotMarco97.enterprise_identity_provisioning_platform.dto.Updat
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.entities.Employee;
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.entities.EmployeeStatus;
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.repositories.EmployeeRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class EmployeeServiceImp implements EmployeeService {
         this.employeeRepository = employeeRepository;
     }
 
+    @Transactional
     @Override
     public EmployeeResponse createEmployee(CreateEmployeeRequest createEmployeeRequest) {
         Employee newEmployee = new Employee();
