@@ -1,25 +1,25 @@
 package com.github.NotMarco97.enterprise_identity_provisioning_platform.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
 
 @Entity
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    String firstName;
-    String lastName;
-    String status;
-    String department;
-    String jobTitle;
-    String email;
-    double salary;
-    String createdAt;
-    String updatedAt;
-    String employeeId;
+    private String firstName;
+    private String lastName;
+    private String status;
+    private String department;
+    private String jobTitle;
+    private String email;
+    private double salary;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+    @Column(unique = true)
+    private String employeeId;
 
     public String getFirstName(){
         return firstName;
@@ -77,19 +77,19 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getCreatedAt(){
+    public LocalDateTime getCreatedAt(){
         return createdAt;
     }
 
-    public void setCreatedAt(String createdAt){
+    public void setCreatedAt(LocalDateTime createdAt){
         this.createdAt = createdAt;
     }
 
-    public String getUpdatedAt(){
+    public LocalDateTime getUpdatedAt(){
         return updatedAt;
     }
 
-    public void setUpdatedAt(String updatedAt){
+    public void setUpdatedAt(LocalDateTime updatedAt){
         this.updatedAt = updatedAt;
     }
 

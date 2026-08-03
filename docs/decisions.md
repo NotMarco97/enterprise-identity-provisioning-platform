@@ -11,7 +11,7 @@ The design principles that guided this project were how, why, and trade-offs. Th
 Separate HR from provisioning
 
 ### Problem
-Employee information already exist in anHR system
+Employee information already exist in an HR system
 
 ### Decision 
 The provisioning platform will focus on onboarding requests instead of managing records.
@@ -30,4 +30,12 @@ This establishes a single source of truth for employee data and keeps the platfo
 #### Cons
 - Requires integration with an external system
 ---
+
+### Decision
+HR owns employeeId and PostgreSQL owns Id
+
+---
+
+### Decision
+DTO will handle LocalDateTime formatting.
 

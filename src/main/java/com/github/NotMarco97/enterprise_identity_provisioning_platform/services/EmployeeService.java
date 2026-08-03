@@ -14,4 +14,5 @@ public interface EmployeeService {
     void deleteById(String employeeID);
     EmployeeResponse updateEmployee(String employeeId, UpdateEmployeeRequest updateEmployeeRequest);
     List<EmployeeResponse> findAll();
+    Boolean existsByEmployeeId(String employeeID);
 }
