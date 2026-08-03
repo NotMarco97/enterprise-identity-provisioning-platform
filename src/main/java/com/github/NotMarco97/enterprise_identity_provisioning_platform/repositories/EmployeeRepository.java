@@ -3,5 +3,9 @@ package com.github.NotMarco97.enterprise_identity_provisioning_platform.reposito
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.entities.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
+
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+    Optional<Employee> findByEmployeeId(String employeeId);
+    boolean existsByEmail(String email);
 }

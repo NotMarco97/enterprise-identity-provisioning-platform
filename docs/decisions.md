@@ -39,3 +39,9 @@ HR owns employeeId and PostgreSQL owns Id
 ### Decision
 DTO will handle LocalDateTime formatting.
 
+---
+
+### Decision
+Email generation does not filter inappropriate combinations - accepted as out of scope.
+
+---

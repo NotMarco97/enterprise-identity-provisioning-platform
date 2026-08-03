@@ -3,7 +3,7 @@ package com.github.NotMarco97.enterprise_identity_provisioning_platform.dto;
 public class UpdateEmployeeRequest {
     private String department;
     private String jobTitle;
-    private double salary;
+    private Double salary;
 
     public String getDepartment() {
         return department;
@@ -18,10 +18,10 @@ public class UpdateEmployeeRequest {
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
-    public double getSalary() {
+    public Double getSalary() {
         return salary;
     }
-    public void setSalary(double salary) {
+    public void setSalary(Double salary) {
         this.salary = salary;
     }
 }
