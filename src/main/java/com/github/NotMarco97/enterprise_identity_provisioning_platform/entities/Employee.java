@@ -20,6 +20,7 @@ public class Employee {
     private EmployeeStatus status;
     private String department;
     private String jobTitle;
+    @Column(unique = true)
     private String email;
     private double salary;
     @CreationTimestamp

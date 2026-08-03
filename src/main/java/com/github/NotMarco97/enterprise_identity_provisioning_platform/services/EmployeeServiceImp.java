@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class EmployeeServiceImp implements EmployeeService {
 
-    private EmployeeRepository employeeRepository;
+    private final EmployeeRepository employeeRepository;
     public EmployeeServiceImp(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
