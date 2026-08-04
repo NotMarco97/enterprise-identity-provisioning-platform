@@ -22,3 +22,10 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 * None.
+---
+
+## v0.2
+
+### Added
+
+*

@@ -39,7 +39,7 @@ public class EmployeeController {
         employeeServiceImp.deleteByEmployeeId(employeeId);
     }
 
-    @PutMapping("{employeeId}")
+    @PatchMapping("{employeeId}")
     public EmployeeResponse updateEmployee(@PathVariable String employeeId, @RequestBody UpdateEmployeeRequest updateEmployeeRequest){
         return employeeServiceImp.updateEmployee(employeeId, updateEmployeeRequest);
     }

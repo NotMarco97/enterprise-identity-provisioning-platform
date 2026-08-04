@@ -61,16 +61,17 @@ Planned technologies:
 
 ## Current Version
 
-**Version:** v0.1
+**Version:** v0.2
 
 Completed in this version:
 
-* Spring Boot project initialization
-* Git repository setup
-* GitHub repository creation
-* PostgreSQL configuration
-* Application startup verification
-* Initial project documentation
+* Working CRUD capability
+* POST   /employees
+* GET    /employees
+* GET    /employees/{employeeId}
+* PATCH  /employees/{employeeId}
+* DELETE /employees/{employeeId}
+* Established identifier ownership 
 
 ---
 
