@@ -11,9 +11,6 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @SequenceGenerator(name = "employeeIdSeq", sequenceName = "employee_id_seq", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "employeeIdSeq")
-    private Long employeeIdSeq;
     private String firstName;
     private String lastName;
     @Enumerated(EnumType.STRING)
@@ -30,12 +27,12 @@ public class Employee {
     @Column(unique = true)
     private String employeeId;
 
-    public Long getEmployeeIdSeq() {
-        return employeeIdSeq;
+    public Long getId() {
+        return id;
     }
 
-    public void setEmployeeIdSeq(Long employeeIdSeq) {
-        this.employeeIdSeq = employeeIdSeq;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName(){
