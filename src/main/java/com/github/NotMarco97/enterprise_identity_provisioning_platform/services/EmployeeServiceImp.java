@@ -41,12 +41,10 @@ public class EmployeeServiceImp implements EmployeeService {
             counter++;
             email = emailNameSection + counter +  "@company.com";
         }
-
         newEmployee.setEmail(email);
 
-        //Second save needed to create the employee id sequence.
         employeeRepository.save(newEmployee);
-        newEmployee.setEmployeeId("EMP-" + newEmployee.getEmployeeIdSeq());
+        newEmployee.setEmployeeId("EMP-" + String.format("%04d", newEmployee.getId()));
         employeeRepository.save(newEmployee);
 
         newEmployeeResponse.setFirstName(newEmployee.getFirstName());

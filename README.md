@@ -1,12 +1,12 @@
-# Enterprise Identity Provisioning & Cloud Automation Platform
+# Identity Provisioning & Cloud Automation Platform
 
 ## Overview
 
-The Enterprise Identity Provisioning Platform is a Spring Boot application designed to automate employee identity provisioning within Microsoft Entra ID using the Microsoft Graph API.
+The Identity Provisioning Platform is a Spring Boot application designed to automate employee identity provisioning within Microsoft Entra ID using the Microsoft Graph API.
 
-The long-term goal of this project is to implement an enterprise onboarding workflow where new employees can be provisioned with user accounts, group memberships, Microsoft 365 licenses, and audit logs through a centralized backend application.
+The long-term goal of this project is to implement an onboarding workflow where new employees can be provisioned with user accounts, group memberships, Microsoft 365 licenses, and audit logs through a centralized backend application.
 
-This project is being developed incrementally using versioned releases to demonstrate the design, implementation, and evolution of an enterprise-grade backend system.
+This project is being developed incrementally using versioned releases to demonstrate the design, implementation, and backend system.
 
 ---
 
@@ -61,16 +61,17 @@ Planned technologies:
 
 ## Current Version
 
-**Version:** v0.1
+**Version:** v0.2
 
 Completed in this version:
 
-* Spring Boot project initialization
-* Git repository setup
-* GitHub repository creation
-* PostgreSQL configuration
-* Application startup verification
-* Initial project documentation
+* Working CRUD capability
+* POST   /employees
+* GET    /employees
+* GET    /employees/{employeeId}
+* PATCH  /employees/{employeeId}
+* DELETE /employees/{employeeId}
+* Established identifier ownership 
 
 ---
 
@@ -93,7 +94,7 @@ Upcoming milestones include:
 ## Project Structure
 
 ```text
-Enterprise-Identity-Provisioning-Platform/
+Identity-Provisioning-Platform/
 
 ├── src/
 ├── docs/
