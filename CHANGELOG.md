@@ -6,19 +6,45 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-* Created Spring Boot project.
-* Initialized local Git repository.
-* Created GitHub repository.
-* Configured PostgreSQL database connection.
-* Added application health check endpoint.
-* Verified successful application startup.
-* Added initial project documentation.
+* Created Spring Boot project
+* Initialized local Git repository
+* Created GitHub repository
+* Configured PostgreSQL database connection
+* Added application health check endpoint
+* Verified successful application startup
+* Added initial project documentation
 * Added Git ignore configuration.
-
 ### Changed
 
-* None.
+* None
 
 ### Fixed
 
-* None.
+* None
+---
+
+## v0.2
+
+### Added
+
+* Added Identities
+* Added Service Interface
+* Added Service Implementation
+* Added DTOs
+* Added Controller
+* Added Enum for Employee status
+* Implemented persistence 
+* Added CRUD endpoints
+
+### Changed
+
+* None
+
+### Fixed
+
+* Inconsistent documentation
+* Inconsistent datatypes with Employee and DTOs
+* updatedAt setter assigned the wrong field
+
+---
+

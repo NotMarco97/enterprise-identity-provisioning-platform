@@ -10,19 +10,15 @@ This document describes how the platform authenticates, authorizes, stores sensi
 
 ### Authentication
 
-- The platform authenticates with Microsoft Entra ID using OAuth 2.0 Client Credentials.
-- Microsoft Graph application permissions are limited to those required for identity provisioning.
+- Not implemented yet
 
 ### Secret Management
 - Local development configuration.
 
 ### Secure Communication
-- HTTPS
-- OAuth access tokens
-- Microsoft Graph Rest API
-- PostgreSQL authenticated connections
+- Not implemented yet
 
-### Security Boundaries 
+### Security Boundaries
 
 - HR system owns employee data
 - Microsoft Graph exposes identity management API

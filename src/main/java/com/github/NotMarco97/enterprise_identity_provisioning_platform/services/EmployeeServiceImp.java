@@ -49,8 +49,6 @@ public class EmployeeServiceImp implements EmployeeService {
         newEmployee.setEmployeeId("EMP-" + newEmployee.getEmployeeIdSeq());
         employeeRepository.save(newEmployee);
 
-
-
         newEmployeeResponse.setFirstName(newEmployee.getFirstName());
         newEmployeeResponse.setLastName(newEmployee.getLastName());
         newEmployeeResponse.setDepartment(newEmployee.getDepartment());
