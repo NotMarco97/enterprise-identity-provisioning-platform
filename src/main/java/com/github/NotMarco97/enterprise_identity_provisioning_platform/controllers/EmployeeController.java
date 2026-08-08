@@ -4,6 +4,7 @@ import com.github.NotMarco97.enterprise_identity_provisioning_platform.dto.Creat
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.dto.EmployeeResponse;
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.dto.UpdateEmployeeRequest;
 import com.github.NotMarco97.enterprise_identity_provisioning_platform.services.EmployeeServiceImp;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,8 +19,9 @@ public class EmployeeController {
         this.employeeServiceImp = employeeServiceImp;
     }
 
+
     @PostMapping()
-    public EmployeeResponse createEmployee(@RequestBody CreateEmployeeRequest createEmployeeRequest){
+    public EmployeeResponse createEmployee(@Valid @RequestBody CreateEmployeeRequest createEmployeeRequest){
         return employeeServiceImp.createEmployee(createEmployeeRequest);
     }
 

@@ -1,11 +1,19 @@
 package com.github.NotMarco97.enterprise_identity_provisioning_platform.dto;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class CreateEmployeeRequest {
 
+    @NotBlank
     private String firstName;
+    @NotBlank
     private String lastName;
+    @NotBlank
     private String department;
+    @NotBlank
     private String jobTitle;
+    @NotNull
     private double salary;
 
     public String getFirstName(){

@@ -82,3 +82,13 @@ Accepted as out of scope.
 - Momentary existence of an inappropriate email
 
 ---
+
+# Release v0.3
+
+---
+
+### Decision
+CreateEmployeeRequest fields are required.
+
+---
+
